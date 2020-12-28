@@ -1,0 +1,78 @@
+
+R version 4.0.3 (2020-10-10) -- "Bunny-Wunnies Freak Out"
+Copyright (C) 2020 The R Foundation for Statistical Computing
+Platform: x86_64-w64-mingw32/x64 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+[Previously saved workspace restored]
+
+> getwd()
+[1] "C:/Users/LENOVO IdeaPad 330/Documents"
+> dir
+function (path = ".", pattern = NULL, all.files = FALSE, 
+    full.names = FALSE, recursive = FALSE, ignore.case = FALSE, 
+    include.dirs = FALSE, no.. = FALSE) 
+.Internal(list.files(path, pattern, all.files, full.names, recursive, 
+    ignore.case, include.dirs, no..))
+<bytecode: 0x000000001298cb40>
+<environment: namespace:base>
+> 
+> dir()
+ [1] "20200314-Faheem SM's Personal Room(155500440102982850)" "20200315-Pharmacology(155759941970384487)"             
+ [3] "AL BAB AL MUMTAZ TRADING submittal 1.docx"              "bioinfomethods1_labs_Lab5_Psy_hrpZ.fas"                
+ [5] "bioinfomethods1_labs_Labs3,4_sequences.fas"             "bioinfomethods1_labs_Labs3,4_sequences.fas.txt"        
+ [7] "bioinfomethods1_labs_Labs3,4_sequences.txt"             "Bioinformatics Methods 2.docx"                         
+ [9] "Bioinformatics Methods 3.docx"                          "Bioinformatics Methods 7.docx"                         
+[11] "cachematrix.R"                                          "Coursera 978FEAFMQZSW (1).pdf"                         
+[13] "Coursera 978FEAFMQZSW (2).jpg"                          "Coursera 978FEAFMQZSW.jpg"                             
+[15] "Custom Office Templates"                                "debug.log"                                             
+[17] "desktop.ini"                                            "GitHub"                                                
+[19] "hw1_data.csv"                                           "Journal of Bacteriology-2008-Rasko-6881.full.pdf"      
+[21] "keerthi.py"                                             "keerthi.pyc"                                           
+[23] "Lab3_dna_clustal.fas"                                   "Lab3_pro_clustal.fas"                                  
+[25] "MAHE Dubai Undertaking Letter (1) - Copy - Copy.pdf"    "MAHE Dubai Undertaking Letter (1) - Copy.pdf"          
+[27] "MEGA X"                                                 "My Music"                                              
+[29] "My Pictures"                                            "My Videos"                                             
+[31] "prot.fas"                                               "ramadan.fas"                                           
+> getwd()
+[1] "C:/Users/LENOVO IdeaPad 330/Documents/GitHub/ProgrammingAssignment2"
+> dir()
+[1] "Daanishmatrix.R" "README.md"      
+> source("Daanishmatrix.R")
+> pmatrix <- makeCacheMatrix(matrix(1:16, nrow=4, ncol=4))
+> pmatrix$getInverse()
+NULL
+> pmatrix <- makeCacheMatrix(matrix1:16, nrow=2, ncol=2))
+Error: unexpected ')' in "pmatrix <- makeCacheMatrix(matrix1:16, nrow=2, ncol=2))"
+> pmatrix <- makeCacheMatrix(matrix1:4, nrow=2, ncol=2))
+Error: unexpected ')' in "pmatrix <- makeCacheMatrix(matrix1:4, nrow=2, ncol=2))"
+> pmatrix <- makeCacheMatrix(matrix(1:16, nrow=2, ncol=2))
+> pmatrix$getInverse()
+NULL
+> cacheSolve(pmatrix)
+     [,1] [,2]
+[1,]   -2  1.5
+[2,]    1 -0.5
+> cacheSolve(pmatrix)
+getting cached data
+     [,1] [,2]
+[1,]   -2  1.5
+[2,]    1 -0.5
+> pmatrix$getInverse()
+     [,1] [,2]
+[1,]   -2  1.5
+[2,]    1 -0.5
+> 
